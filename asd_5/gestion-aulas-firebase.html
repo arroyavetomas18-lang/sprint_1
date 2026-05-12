@@ -108,7 +108,7 @@
 
 <header>
   <div>
-    <h1>🏫 Sistema de Gestión de Aulas</h1>
+    <h1> Sistema de Gestión de Aulas</h1>
     <p>Institución Universitaria Pascual Bravo - Sede Robledo
       <span class="fb-status" id="fb-status">⏳ Conectando Firebase...</span>
     </p>
@@ -843,7 +843,7 @@ function renderReportar() {
     '<option value="Media">Media - Afecta pero se puede trabajar</option>' +
     '<option value="Baja">Baja - No afecta las clases</option></select>' +
     '<br><button class="btn-naranja" style="margin-top:16px;" onclick="enviarReporte()">Enviar Reporte</button>' +
-    '<div class="mensaje-ok" id="msgOk">✅ ¡Reporte enviado! El personal de mantenimiento será notificado.</div>' +
+    '<div class="mensaje-ok" id="msgOk"> Reporte enviado! El personal de mantenimiento será notificado.</div>' +
     '<div class="mensaje-error" id="msgErr"></div>' +
     '</div>';
 }
@@ -932,7 +932,7 @@ async function registrarse() {
     // Limpiar formulario
     ['reg-nombre','reg-email','reg-password','reg-password2'].forEach(function(id){ document.getElementById(id).value = ''; });
     document.getElementById('reg-rol').value = '';
-    msgOk.innerHTML = '✅ Cuenta creada. Ahora puedes <button class="btn-link" onclick="cambiarTab(\'login\')">iniciar sesión</button>.';
+    msgOk.innerHTML = ' Cuenta creada. Ahora puedes <button class="btn-link" onclick="cambiarTab(\'login\')">iniciar sesión</button>.';
     msgOk.style.display = 'block';
   } catch(e) {
     var msg = e.message;
@@ -962,7 +962,7 @@ async function iniciarSesion() {
     actualizarUIConSesion();
     document.getElementById('login-email').value = '';
     document.getElementById('login-password').value = '';
-    msgOk.innerHTML = '✅ Bienvenido, <strong>' + sesion.nombre + '</strong>.';
+    msgOk.innerHTML = ' Bienvenido, <strong>' + sesion.nombre + '</strong>.';
     msgOk.style.display = 'block';
   } catch(e) {
     var msg = 'Correo o contraseña incorrectos.';
