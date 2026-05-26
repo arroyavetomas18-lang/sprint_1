@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gestión de Aulas - Pascual Bravo</title>
-  <!-- Segundo commit sprint 1 -->
-  <!-- Tercer commit sprint 1 -->
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }
@@ -108,7 +106,7 @@
 
 <header>
   <div>
-    <h1> Sistema de Gestión de Aulas</h1>
+    <h1>🏫 Sistema de Gestión de Aulas</h1>
     <p>Institución Universitaria Pascual Bravo - Sede Robledo
       <span class="fb-status" id="fb-status">⏳ Conectando Firebase...</span>
     </p>
@@ -244,52 +242,52 @@
       </select>
       <br><br>
       <table id="tabla-inventario">
-        <tr><th>Salón</th><th>Equipo</th><th>Cantidad</th><th>Estado</th></tr>
-        <tr data-salon="101"><td>Salón 101</td><td>Computador de escritorio</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="101"><td>Salón 101</td><td>Proyector</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="101"><td>Salón 101</td><td>Tablero acrílico</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="101"><td>Salón 101</td><td>Sillas</td><td>30</td><td><span class="badge badge-mantenimiento">1 dañada</span></td></tr>
-        <tr data-salon="101"><td>Salón 101</td><td>Mesas</td><td>15</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="102"><td>Salón 102</td><td>Computador de escritorio</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="102"><td>Salón 102</td><td>Proyector</td><td>1</td><td><span class="badge badge-ocupado">Dañado</span></td></tr>
-        <tr data-salon="102"><td>Salón 102</td><td>Tablero acrílico</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="102"><td>Salón 102</td><td>Sillas</td><td>25</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="102"><td>Salón 102</td><td>Cable HDMI</td><td>2</td><td><span class="badge badge-mantenimiento">1 dañado</span></td></tr>
-        <tr data-salon="201"><td>Salón 201</td><td>Computador de escritorio</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="201"><td>Salón 201</td><td>Proyector</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="201"><td>Salón 201</td><td>Tablero acrílico</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="201"><td>Salón 201</td><td>Sillas</td><td>35</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="201"><td>Salón 201</td><td>Aire acondicionado</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="202"><td>Salón 202</td><td>Computador de escritorio</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="202"><td>Salón 202</td><td>Proyector</td><td>1</td><td><span class="badge badge-ocupado">Dañado</span></td></tr>
-        <tr data-salon="202"><td>Salón 202</td><td>Tablero acrílico</td><td>1</td><td><span class="badge badge-mantenimiento">Desgastado</span></td></tr>
-        <tr data-salon="202"><td>Salón 202</td><td>Sillas</td><td>30</td><td><span class="badge badge-mantenimiento">3 dañadas</span></td></tr>
-        <tr data-salon="202"><td>Salón 202</td><td>Extensión eléctrica</td><td>2</td><td><span class="badge badge-ocupado">Dañada</span></td></tr>
-        <tr data-salon="301"><td>Salón 301</td><td>Computador de escritorio</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="301"><td>Salón 301</td><td>Proyector</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="301"><td>Salón 301</td><td>Tablero acrílico</td><td>2</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="301"><td>Salón 301</td><td>Sillas</td><td>40</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="301"><td>Salón 301</td><td>Cable de red</td><td>3</td><td><span class="badge badge-ocupado">1 dañado</span></td></tr>
-        <tr data-salon="lab"><td>Lab Sistemas</td><td>Computador de escritorio</td><td>20</td><td><span class="badge badge-mantenimiento">3 dañados</span></td></tr>
-        <tr data-salon="lab"><td>Lab Sistemas</td><td>Teclado</td><td>20</td><td><span class="badge badge-ocupado">3 sin teclado</span></td></tr>
-        <tr data-salon="lab"><td>Lab Sistemas</td><td>Mouse</td><td>20</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="lab"><td>Lab Sistemas</td><td>Proyector</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="lab"><td>Lab Sistemas</td><td>Switch de red</td><td>2</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="lab"><td>Lab Sistemas</td><td>UPS / Regulador</td><td>5</td><td><span class="badge badge-mantenimiento">1 dañado</span></td></tr>
-        <tr data-salon="105"><td>Salón 105</td><td>Proyector</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="105"><td>Salón 105</td><td>Tablero acrílico</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="105"><td>Salón 105</td><td>Sillas</td><td>28</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="105"><td>Salón 105</td><td>Ventilador</td><td>2</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="106"><td>Salón 106</td><td>Proyector</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="106"><td>Salón 106</td><td>Tablero acrílico</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="106"><td>Salón 106</td><td>Sillas</td><td>28</td><td><span class="badge badge-mantenimiento">2 dañadas</span></td></tr>
-        <tr data-salon="106"><td>Salón 106</td><td>Bombillo</td><td>4</td><td><span class="badge badge-ocupado">1 quemado</span></td></tr>
-        <tr data-salon="aud"><td>Auditorio</td><td>Proyector</td><td>2</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="aud"><td>Auditorio</td><td>Micrófono</td><td>4</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="aud"><td>Auditorio</td><td>Pantalla de proyección</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="aud"><td>Auditorio</td><td>Sistema de sonido</td><td>1</td><td><span class="badge badge-mantenimiento">En revisión</span></td></tr>
-        <tr data-salon="aud"><td>Auditorio</td><td>Sillas</td><td>100</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
-        <tr data-salon="aud"><td>Auditorio</td><td>Computador portátil</td><td>1</td><td><span class="badge badge-disponible">Bueno</span></td></tr>
+        <tr><th>Salón</th><th>Equipo</th><th>Cantidad</th><th>Estado</th><th>Acciones</th></tr>
+        <tr data-salon="101"><td>Salón 101</td><td>Computador de escritorio</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="101"><td>Salón 101</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="101"><td>Salón 101</td><td>Tablero acrílico</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="101"><td>Salón 101</td><td>Sillas</td><td class="td-cantidad">30</td><td><span class="badge badge-mantenimiento">1 dañada</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="101"><td>Salón 101</td><td>Mesas</td><td class="td-cantidad">15</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="102"><td>Salón 102</td><td>Computador de escritorio</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="102"><td>Salón 102</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-ocupado">Dañado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="102"><td>Salón 102</td><td>Tablero acrílico</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="102"><td>Salón 102</td><td>Sillas</td><td class="td-cantidad">25</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="102"><td>Salón 102</td><td>Cable HDMI</td><td class="td-cantidad">2</td><td><span class="badge badge-mantenimiento">1 dañado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="201"><td>Salón 201</td><td>Computador de escritorio</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="201"><td>Salón 201</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="201"><td>Salón 201</td><td>Tablero acrílico</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="201"><td>Salón 201</td><td>Sillas</td><td class="td-cantidad">35</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="201"><td>Salón 201</td><td>Aire acondicionado</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="202"><td>Salón 202</td><td>Computador de escritorio</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="202"><td>Salón 202</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-ocupado">Dañado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="202"><td>Salón 202</td><td>Tablero acrílico</td><td class="td-cantidad">1</td><td><span class="badge badge-mantenimiento">Desgastado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="202"><td>Salón 202</td><td>Sillas</td><td class="td-cantidad">30</td><td><span class="badge badge-mantenimiento">3 dañadas</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="202"><td>Salón 202</td><td>Extensión eléctrica</td><td class="td-cantidad">2</td><td><span class="badge badge-ocupado">Dañada</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="301"><td>Salón 301</td><td>Computador de escritorio</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="301"><td>Salón 301</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="301"><td>Salón 301</td><td>Tablero acrílico</td><td class="td-cantidad">2</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="301"><td>Salón 301</td><td>Sillas</td><td class="td-cantidad">40</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="301"><td>Salón 301</td><td>Cable de red</td><td class="td-cantidad">3</td><td><span class="badge badge-ocupado">1 dañado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="lab"><td>Lab Sistemas</td><td>Computador de escritorio</td><td class="td-cantidad">20</td><td><span class="badge badge-mantenimiento">3 dañados</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="lab"><td>Lab Sistemas</td><td>Teclado</td><td class="td-cantidad">20</td><td><span class="badge badge-ocupado">3 sin teclado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="lab"><td>Lab Sistemas</td><td>Mouse</td><td class="td-cantidad">20</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="lab"><td>Lab Sistemas</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="lab"><td>Lab Sistemas</td><td>Switch de red</td><td class="td-cantidad">2</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="lab"><td>Lab Sistemas</td><td>UPS / Regulador</td><td class="td-cantidad">5</td><td><span class="badge badge-mantenimiento">1 dañado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="105"><td>Salón 105</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="105"><td>Salón 105</td><td>Tablero acrílico</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="105"><td>Salón 105</td><td>Sillas</td><td class="td-cantidad">28</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="105"><td>Salón 105</td><td>Ventilador</td><td class="td-cantidad">2</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="106"><td>Salón 106</td><td>Proyector</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="106"><td>Salón 106</td><td>Tablero acrílico</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="106"><td>Salón 106</td><td>Sillas</td><td class="td-cantidad">28</td><td><span class="badge badge-mantenimiento">2 dañadas</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="106"><td>Salón 106</td><td>Bombillo</td><td class="td-cantidad">4</td><td><span class="badge badge-ocupado">1 quemado</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="aud"><td>Auditorio</td><td>Proyector</td><td class="td-cantidad">2</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="aud"><td>Auditorio</td><td>Micrófono</td><td class="td-cantidad">4</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="aud"><td>Auditorio</td><td>Pantalla de proyección</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="aud"><td>Auditorio</td><td>Sistema de sonido</td><td class="td-cantidad">1</td><td><span class="badge badge-mantenimiento">En revisión</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="aud"><td>Auditorio</td><td>Sillas</td><td class="td-cantidad">100</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
+        <tr data-salon="aud"><td>Auditorio</td><td>Computador portátil</td><td class="td-cantidad">1</td><td><span class="badge badge-disponible">Bueno</span></td><td><button class="btn-verde btn-sm" onclick="instalarEquipo(this)">+ Instalar</button> <button class="btn-rojo btn-sm" onclick="retirarEquipo(this)">− Retirar</button></td></tr>
       </table>
     </div>
   </div>
@@ -340,8 +338,23 @@
         <button style="width:100%; margin-top:18px;" onclick="iniciarSesion()">Entrar</button>
         <div class="mensaje-ok" id="msg-login-ok"></div>
         <div class="mensaje-error" id="msg-login-error"></div>
-        <p style="font-size:13px; margin-top:16px; text-align:center;">
+        <p style="font-size:13px; margin-top:10px; text-align:center;">
+          <button class="btn-link" onclick="cambiarTab('recuperar')">¿Olvidaste tu contraseña?</button>
+        </p>
+        <p style="font-size:13px; margin-top:6px; text-align:center;">
           ¿No tienes cuenta? <button class="btn-link" onclick="cambiarTab('registro')">Regístrate aquí</button>
+        </p>
+      </div>
+      <!-- RECUPERAR CONTRASEÑA -->
+      <div id="form-recuperar" class="auth-form">
+        <p style="font-size:13px; color:#666; margin-bottom:12px;">Ingresa tu correo institucional y te enviaremos un enlace para restablecer tu contraseña.</p>
+        <label for="recuperar-email">Correo institucional</label>
+        <input type="email" id="recuperar-email" placeholder="usuario@pascualbravo.edu.co" />
+        <button style="width:100%; margin-top:18px;" class="btn-naranja" onclick="recuperarContrasena()">Enviar enlace de recuperación</button>
+        <div class="mensaje-ok" id="msg-recuperar-ok"></div>
+        <div class="mensaje-error" id="msg-recuperar-error"></div>
+        <p style="font-size:13px; margin-top:16px; text-align:center;">
+          <button class="btn-link" onclick="cambiarTab('login')">← Volver al inicio de sesión</button>
         </p>
       </div>
       <!-- REGISTRO -->
@@ -398,6 +411,22 @@
     <div style="display:flex; gap:10px;">
       <button class="btn-naranja" onclick="guardarPrioridad()">Guardar</button>
       <button onclick="cerrarModal('modal-prioridad')" style="background:#999;">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: Asignar responsable -->
+<div class="modal-overlay" id="modal-responsable">
+  <div class="modal-box">
+    <button class="modal-cerrar" onclick="cerrarModal('modal-responsable')">✕</button>
+    <h3>Asignar Responsable</h3>
+    <input type="hidden" id="responsable-reporte-id" />
+    <p id="responsable-reporte-info" style="font-size:13px; color:#555; margin-bottom:12px;"></p>
+    <label for="responsable-nombre">Nombre del responsable</label>
+    <input type="text" id="responsable-nombre" placeholder="Ej: Carlos Gómez" />
+    <div style="display:flex; gap:10px;">
+      <button class="btn-naranja" onclick="guardarResponsable()">Guardar</button>
+      <button onclick="cerrarModal('modal-responsable')" style="background:#999;">Cancelar</button>
     </div>
   </div>
 </div>
@@ -637,7 +666,8 @@ function renderReportes() {
       acciones = '<td>';
       if (r.estado !== 'Resuelto')  acciones += '<button class="btn-verde btn-sm" onclick="cambiarEstado(\'' + r.id + '\', \'Resuelto\')" style="margin-right:4px;">✔ Resolver</button>';
       if (r.estado === 'Pendiente') acciones += '<button class="btn-sm" onclick="cambiarEstado(\'' + r.id + '\', \'En proceso\')" style="margin-right:4px;">▶ Iniciar</button>';
-      acciones += '<button class="btn-sm btn-naranja" onclick="abrirModalPrioridad(\'' + r.id + '\')">✎ Prioridad</button>';
+      acciones += '<button class="btn-sm btn-naranja" onclick="abrirModalPrioridad(\'' + r.id + '\')" style="margin-right:4px;">✎ Prioridad</button>';
+      acciones += '<button class="btn-sm" style="background:#6c3483;" onclick="abrirModalResponsable(\'' + r.id + '\')">👤 Responsable</button>';
       acciones += '</td>';
     }
     var num = String(i + 1).padStart(3, '0');
@@ -687,7 +717,8 @@ function verDetalle(id) {
     '<tr><td style="padding:6px; font-weight:bold; color:#555;">Prioridad</td><td>' + badgePrioridad(r.prioridad) + '</td></tr>' +
     '<tr style="background:#f9f9f9;"><td style="padding:6px; font-weight:bold; color:#555;">Fecha</td><td>' + r.fecha + '</td></tr>' +
     '<tr><td style="padding:6px; font-weight:bold; color:#555;">Reportado por</td><td>' + r.reportadoPor + '</td></tr>' +
-    '<tr style="background:#f9f9f9;"><td style="padding:6px; font-weight:bold; color:#555;">Estado actual</td><td>' + badgeEstado(r.estado) + '</td></tr>' +
+    '<tr style="background:#f9f9f9;"><td style="padding:6px; font-weight:bold; color:#555;">Responsable</td><td>' + (r.responsable || '<span style="color:#999;">Sin asignar</span>') + '</td></tr>' +
+    '<tr><td style="padding:6px; font-weight:bold; color:#555;">Estado actual</td><td>' + badgeEstado(r.estado) + '</td></tr>' +
     '</table>' +
     '<div style="margin-top:16px;"><strong style="font-size:13px; color:#555;">Progreso:</strong>' + timelineHTML(r.estado) + '</div>';
   document.getElementById('modal-detalle').classList.add('visible');
@@ -700,6 +731,30 @@ async function cambiarEstado(id, nuevoEstado) {
     await cargarReportes();
     renderReportes();
   } catch(e) { alert('Error al cambiar estado: ' + e.message); }
+  mostrarLoading(false);
+}
+
+function abrirModalResponsable(id) {
+  var r = reportesCache.find(function(x) { return x.id === id; });
+  if (!r) return;
+  document.getElementById('responsable-reporte-id').value = id;
+  document.getElementById('responsable-reporte-info').textContent = r.salon + ' — ' + r.tipo;
+  document.getElementById('responsable-nombre').value = r.responsable || '';
+  document.getElementById('modal-responsable').classList.add('visible');
+}
+
+async function guardarResponsable() {
+  var id          = document.getElementById('responsable-reporte-id').value;
+  var responsable = document.getElementById('responsable-nombre').value.trim();
+  if (!responsable) { alert('Por favor ingresa el nombre del responsable.'); return; }
+  mostrarLoading(true);
+  try {
+    await db.collection('reportes').doc(id).update({ responsable: responsable });
+    var r = reportesCache.find(function(x) { return x.id === id; });
+    if (r) r.responsable = responsable;
+    cerrarModal('modal-responsable');
+    renderReportes();
+  } catch(e) { alert('Error al guardar responsable: ' + e.message); }
   mostrarLoading(false);
 }
 
@@ -730,6 +785,25 @@ function filtrarInventario() {
   var filas = document.querySelectorAll('#tabla-inventario tr[data-salon]');
   for (var i = 0; i < filas.length; i++) {
     filas[i].style.display = (valor === 'todos' || filas[i].getAttribute('data-salon') === valor) ? '' : 'none';
+  }
+}
+
+function instalarEquipo(btn) {
+  var fila = btn.closest('tr');
+  var tdCantidad = fila.querySelector('.td-cantidad');
+  var cantidad = parseInt(tdCantidad.textContent) + 1;
+  tdCantidad.textContent = cantidad;
+  fila.style.display = '';
+}
+
+function retirarEquipo(btn) {
+  var fila = btn.closest('tr');
+  var tdCantidad = fila.querySelector('.td-cantidad');
+  var cantidad = parseInt(tdCantidad.textContent) - 1;
+  if (cantidad <= 0) {
+    fila.style.display = 'none';
+  } else {
+    tdCantidad.textContent = cantidad;
   }
 }
 
@@ -843,7 +917,7 @@ function renderReportar() {
     '<option value="Media">Media - Afecta pero se puede trabajar</option>' +
     '<option value="Baja">Baja - No afecta las clases</option></select>' +
     '<br><button class="btn-naranja" style="margin-top:16px;" onclick="enviarReporte()">Enviar Reporte</button>' +
-    '<div class="mensaje-ok" id="msgOk"> Reporte enviado! El personal de mantenimiento será notificado.</div>' +
+    '<div class="mensaje-ok" id="msgOk">✅ ¡Reporte enviado! El personal de mantenimiento será notificado.</div>' +
     '<div class="mensaje-error" id="msgErr"></div>' +
     '</div>';
 }
@@ -895,11 +969,36 @@ async function enviarReporte() {
 function cambiarTab(cual) {
   document.getElementById('form-login').classList.remove('visible');
   document.getElementById('form-registro').classList.remove('visible');
+  document.getElementById('form-recuperar').classList.remove('visible');
   document.getElementById('tab-login').classList.remove('activo');
   document.getElementById('tab-registro').classList.remove('activo');
   document.getElementById('form-' + cual).classList.add('visible');
-  document.getElementById('tab-' + cual).classList.add('activo');
+  if (cual !== 'recuperar') document.getElementById('tab-' + cual).classList.add('activo');
   document.querySelectorAll('.mensaje-ok, .mensaje-error').forEach(function(m) { m.style.display = 'none'; });
+}
+
+async function recuperarContrasena() {
+  var email  = document.getElementById('recuperar-email').value.trim();
+  var msgOk  = document.getElementById('msg-recuperar-ok');
+  var msgErr = document.getElementById('msg-recuperar-error');
+  msgOk.style.display = 'none'; msgErr.style.display = 'none';
+
+  if (!email) {
+    msgErr.innerHTML = '⚠ Por favor ingresa tu correo.'; msgErr.style.display = 'block'; return;
+  }
+
+  mostrarLoading(true);
+  try {
+    await auth.sendPasswordResetEmail(email);
+    document.getElementById('recuperar-email').value = '';
+    msgOk.innerHTML = '✅ Se ha enviado un enlace de recuperación a <strong>' + email + '</strong>. Revisa tu bandeja de entrada.';
+    msgOk.style.display = 'block';
+  } catch(e) {
+    var msg = 'No se encontró una cuenta con ese correo.';
+    if (e.code === 'auth/invalid-email') msg = 'El correo ingresado no es válido.';
+    msgErr.innerHTML = '⚠ ' + msg; msgErr.style.display = 'block';
+  }
+  mostrarLoading(false);
 }
 
 async function registrarse() {
@@ -932,7 +1031,7 @@ async function registrarse() {
     // Limpiar formulario
     ['reg-nombre','reg-email','reg-password','reg-password2'].forEach(function(id){ document.getElementById(id).value = ''; });
     document.getElementById('reg-rol').value = '';
-    msgOk.innerHTML = ' Cuenta creada. Ahora puedes <button class="btn-link" onclick="cambiarTab(\'login\')">iniciar sesión</button>.';
+    msgOk.innerHTML = '✅ Cuenta creada. Ahora puedes <button class="btn-link" onclick="cambiarTab(\'login\')">iniciar sesión</button>.';
     msgOk.style.display = 'block';
   } catch(e) {
     var msg = e.message;
@@ -962,7 +1061,7 @@ async function iniciarSesion() {
     actualizarUIConSesion();
     document.getElementById('login-email').value = '';
     document.getElementById('login-password').value = '';
-    msgOk.innerHTML = ' Bienvenido, <strong>' + sesion.nombre + '</strong>.';
+    msgOk.innerHTML = '✅ Bienvenido, <strong>' + sesion.nombre + '</strong>.';
     msgOk.style.display = 'block';
   } catch(e) {
     var msg = 'Correo o contraseña incorrectos.';
